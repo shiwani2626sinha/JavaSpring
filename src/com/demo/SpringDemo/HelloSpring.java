@@ -17,6 +17,7 @@ public class HelloSpring {
 		
 		//use bean.function
 		theCoach.getDailyWorkout();
+		theCoach.getDailyFortune();
 		
 		
 		//close the application context
