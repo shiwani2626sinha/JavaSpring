@@ -15,8 +15,11 @@
     </bean>
     
     <bean id ="myCoach"
-    	class = "com.demo.SpringDemo.BaseballCoach">
+    	class = "com.demo.SpringDemo.CricketCoach">
     	<property name="fortune" ref="myFortuneService"></property>
+    	<property name="teamName" value="CSK"></property>
+    	<property name="emailAdd" value="abc@gmail.com"></property>
+    	
     </bean>
     	
     

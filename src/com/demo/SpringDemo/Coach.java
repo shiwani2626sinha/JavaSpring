@@ -8,4 +8,6 @@ public interface Coach {
 	public default void getDailyFortune() {
 		System.out.print("general fortune");
 	}
+
+
 }

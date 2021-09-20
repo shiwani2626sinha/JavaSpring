@@ -4,6 +4,9 @@ public class BaseballCoach implements Coach {
 	
 	Fortune fortune;
 	
+	
+	
+	//setter injection
 	public void setFortune(Fortune fortune) {
 		this.fortune = fortune;
 	}
@@ -18,4 +21,8 @@ public class BaseballCoach implements Coach {
 	public void getDailyFortune() {
 		fortune.getFortune();
 	}
+
+
+	
+	
 }
