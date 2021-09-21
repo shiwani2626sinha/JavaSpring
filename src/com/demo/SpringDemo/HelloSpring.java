@@ -18,7 +18,7 @@ public class HelloSpring {
 		//use bean.function
 		theCoach.getDailyWorkout();
 		//DI FOR EXTERNAL CLASS
-		theCoach.getDailyFortune();
+		//theCoach.getDailyFortune();
 
 		
 		//close the application context

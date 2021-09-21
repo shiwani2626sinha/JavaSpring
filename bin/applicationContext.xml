@@ -14,16 +14,20 @@
     	id="myFortuneService"
     	class = "com.demo.SpringDemo.HappyFortune">
     </bean>
+    <bean
+    	id="myRandomFortuneService"
+    	class = "com.demo.SpringDemo.RandomFortune">
+    </bean>
     
     <bean id ="myCoach"
-    	class = "com.demo.SpringDemo.CricketCoach">
+    	class = "com.demo.SpringDemo.TrackCoach">
     	
     	<!-- constructor injection -->
-    	<property name="fortune" ref="myFortuneService"></property>
+    	<property name="fortune" ref="myRandomFortuneService"></property>
     	
     	<!--literal injection -->
-    	<property name="teamName" value='${foo.team}'></property>
-    	<property name="emailAdd" value='${foo.email}'></property>
+    	<!--<property name="teamName" value='${foo.team}'></property>
+    	<property name="emailAdd" value='${foo.email}'></property>  -->
     	
     </bean>
     	
