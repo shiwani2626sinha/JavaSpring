@@ -8,6 +8,7 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- Define your beans here -->
+    <context:property-placeholder location = "classpath:info.properties"/>
     
     <bean
     	id="myFortuneService"
@@ -16,9 +17,13 @@
     
     <bean id ="myCoach"
     	class = "com.demo.SpringDemo.CricketCoach">
+    	
+    	<!-- constructor injection -->
     	<property name="fortune" ref="myFortuneService"></property>
-    	<property name="teamName" value="CSK"></property>
-    	<property name="emailAdd" value="abc@gmail.com"></property>
+    	
+    	<!--literal injection -->
+    	<property name="teamName" value='${foo.team}'></property>
+    	<property name="emailAdd" value='${foo.email}'></property>
     	
     </bean>
     	
