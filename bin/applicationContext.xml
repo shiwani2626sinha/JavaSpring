@@ -20,7 +20,7 @@
     </bean>
     
     <bean id ="myCoach"
-    	class = "com.demo.SpringDemo.TrackCoach" scope="prototype">
+    	class = "com.demo.SpringDemo.TrackCoach" init-method="doStartStuff" destroy-method="doCleanStuff">
     	
     	<!-- constructor injection -->
     	<property name="fortune" ref="myRandomFortuneService"></property>

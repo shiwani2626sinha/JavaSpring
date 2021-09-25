@@ -17,6 +17,14 @@ public class TrackCoach implements Coach{
 		this.fortune = fortune;
 	}
     
+	// add an init method
+	public void doStartStuff() {
+		System.out.println("startup stuff function");
+	}
+	
+	public void doCleanStuff() {
+		System.out.println("End stuff function");
+	}
 	
 
 }
